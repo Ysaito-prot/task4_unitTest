@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    background-image: url(http://homepage-collection.com/javascript_training/2023-3/s.nagajima/kadai04/img/back.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+  color: #fff;
+  background-color: #060680;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 0;
+}
+form {
+  width: 600px;
+  margin: auto;
+}
+label {
+  margin-bottom: 0;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 600px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: rgba(118, 123, 204, 0.5);
+}
+/* input:valid {
+  color: red;
+  background-color: white;
+}
+input[type="text"]:invalid {
+  background-color: #eb9a9a;
+} */
+input[type="radio"]{
+  margin: 30px 0 0 20px;
+  
+}
+/* 要確認 */
+.shadows {
+  width: 550px;
+  margin: 0 0 0 auto;
+}
+.shadows input[type="text"]:nth-of-type(n+1):nth-of-type(-n+2),
+.shadows input:nth-of-type(17),
+textarea {
+  width: 550px;
+}
+.shadows1 {
+  padding-bottom: 30px;
+  box-shadow: 3px 0 3px -3px #000000;
+}
+.buttons {
+  width: 400px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* .error-name,
+.error-hurigana,
+.error-companyName,
+.error-address,
+.error-mailAddress,
+.error-tel,
+.error-url,
+.error-budget,
+.error-message {
+
+} */
+
+input[type="submit"]{
+  width: 200px;
+  padding: 10px;
+  color: #fff;
+  background-color: #073490;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+input[type="reset"]{
+  width: 150px;
+  padding: 10px;
+  color: #847c7c;
+  background-color: #dedbdb;
+  border: 1px solid #b9b5b5;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+
+.Required {
+  text-align: right;
+}
+.Required:first-letter {
+  color: rgb(255, 0, 0);
+}
+span {
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+}
+.item {
+  margin-top: 40px;
+}
+.item:nth-of-type(1){
+  margin-top: 20px;
+}
