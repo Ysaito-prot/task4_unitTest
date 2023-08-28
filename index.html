@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>お問い合わせフォーム | EBAシステム開発</title>
+        <meta name="description" content="">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="contact">
+            <h2>お問い合わせフォーム</h2>
+            <div class="Required"><span>※</span>必須項目</div>
+            <!-- <form action="" method="post" novalidate> -->
+            <form name="form1" onSubmit="return false">
+                <div class="item"><label for="name">名前<span> ※</span></label> </div>
+                <input id="name" type="text" pattern="^[ぁ-んァ-ヶ一-龥々a-z]+$" name="yourname" required>
+                <div class="error-name"></div>
+                <div class="item"><label for="hurigana">フリガナ<span> ※</span></label> </div>
+                <input id="hurigana" type="text" pattern="^[ァ-ヶ一]+$" name="yourname" required>
+                <div class="error-hurigana"></div>
+                <div class="item"><label for="companyName">会社名<span> ※</span></label> </div>
+                <input id="companyName" type="text" pattern="^[ぁ-んァ-ヶ一-龥々a-z0-9-/:-@[-´{-~]+$" name="yourname" required>
+                <div class="error-companyName"></div>
+                <div class="item">性別<span> ※</span></div>
+                <input type="radio" name="q1" value="男" required> 男 <input type="radio" name="q1" value="女"> 女 <div class="item">住所（都道府県）<span> ※</span></div>
+                <select name="example2" required>
+                    <option value="">都道府県の選択</option>
+                    <option value="北海道">北海道</option>
+                    <option value="青森県">青森県</option>
+                    <option value="岩手県">岩手県</option>
+                    <option value="宮城県">宮城県</option>
+                    <option value="秋田県">秋田県</option>
+                    <option value="山形県">山形県</option>
+                    <option value="福島県">福島県</option>
+                    <option value="茨城県">茨城県</option>
+                    <option value="栃木県">栃木県</option>
+                    <option value="群馬県">群馬県</option>
+                    <option value="埼玉県">埼玉県</option>
+                    <option value="千葉県">千葉県</option>
+                    <option value="東京都">東京都</option>
+                    <option value="神奈川県">神奈川県</option>
+                    <option value="新潟県">新潟県</option>
+                    <option value="富山県">富山県</option>
+                    <option value="石川県">石川県</option>
+                    <option value="福井県">福井県</option>
+                    <option value="山梨県">山梨県</option>
+                    <option value="長野県">長野県</option>
+                    <option value="岐阜県">岐阜県</option>
+                    <option value="静岡県">静岡県</option>
+                    <option value="愛知県">愛知県</option>
+                    <option value="三重県">三重県</option>
+                    <option value="滋賀県">滋賀県</option>
+                    <option value="京都府">京都府</option>
+                    <option value="大阪府">大阪府</option>
+                    <option value="兵庫県">兵庫県</option>
+                    <option value="奈良県">奈良県</option>
+                    <option value="和歌山県">和歌山県</option>
+                    <option value="鳥取県">鳥取県</option>
+                    <option value="島根県">島根県</option>
+                    <option value="岡山県">岡山県</option>
+                    <option value="広島県">広島県</option>
+                    <option value="山口県">山口県</option>
+                    <option value="徳島県">徳島県</option>
+                    <option value="香川県">香川県</option>
+                    <option value="愛媛県">愛媛県</option>
+                    <option value="高知県">高知県</option>
+                    <option value="福岡県">福岡県</option>
+                    <option value="佐賀県">佐賀県</option>
+                    <option value="長崎県">長崎県</option>
+                    <option value="熊本県">熊本県</option>
+                    <option value="大分県">大分県</option>
+                    <option value="宮崎県">宮崎県</option>
+                    <option value="鹿児島県">鹿児島県</option>
+                    <option value="沖縄県">沖縄県</option>
+                </select>
+                <div class="item"><label for="address">住所（都道府県以下）<span> ※</span></label> </div>
+                <input id="address" type="text" pattern="^[ぁ-んァ-ヶ一-龥々a-z0-9\-]+$" name="yourname" required>
+                <div class="error-address"></div>
+                <div class="item"><label for="mailAddress">メールアドレス<span> ※</span></label> </div>
+                <input id="mailAddress" type="text" pattern="^[ぁ-んァ-ヶ一-龥々a-z0-9\-@\+\._]+$" name="yourname" required>
+                <div class="error-mailAddress"></div>
+                <div class="shadows">
+                    <div class="shadows1">
+                        <div class="item"><label for="tel">電話番号<span> ※</span></label> </div>
+                        <input id="tel" type="text" pattern="^080-\d{4}-\d{4}|0120-\d{4}-\d{4}" name="yourname" required>
+                        <div class="error-tel"></div>
+                        <div class="item"><label for="url">サイトURL</label> </div>
+                        <input id="url" type="text" pattern="^[a-z0-9\-_!\.*'\/]+$" name="yourname">
+                        <div class="error-url"></div>
+                        <div class="item" id="contact2">お問い合わせサービス<span> ※<span id="contactError"></span></span></div>
+                        <input type="checkbox" class="check" name="1" value="A">ホームページ制作 <br>
+                        <input type="checkbox" class="check" name="2" value="B">ランディングページ制作 <br>
+                        <input type="checkbox" class="check" name="3" value="C">パンフレット・フライヤー制作 <br>
+                        <input type="checkbox" class="check" name="4" value="D">バナー制作 <br>
+                        <input type="checkbox" class="check" name="5" value="E">ECサイト制作 <br>
+                        <input type="checkbox" class="check" name="6" value="F">バナー・テキスト・パンフレット・記事広告 <br>
+                        <input type="checkbox" class="check" name="7" value="G">ブログ広告 <br>
+                        <input type="checkbox" class="check" name="8" value="H">各種SNSページ制作・運営 <br>
+                        <input type="checkbox" class="check" name="9" value="I">営業代行 <br>
+                        <input type="checkbox" class="check" name="10" value="J">広告代理事業 <br>
+                        <input type="checkbox" class="check" name="11" value="K">SEO対策 <br>
+                        <input type="checkbox" class="check" name="12" value="L">代理店募集 <br>
+                        <input type="checkbox" class="check" name="13" value="M">SES <br>
+                        <input type="checkbox" class="check" name="14" value="N">その他 <div class="item">
+                            <label for="budget">ご予算</label>
+                        </div>
+                        <input id="budget" type="text" pattern="^[0-9]+$" name="yourname">
+                        <div class="error-budget"></div>
+                        <div class="item"><label for="message">お問い合わせ内容</label> </div>
+                        <textarea id="message" name="message"　cols="20" rows="3"></textarea>                    </div>
+                        <div class="error-message"></div>
+                    <div class="buttons">
+                        <input type="submit" name="button" value="入力内容確認" onClick="return isCheck()" />
+                        <input type="reset" name="button" value="リセット" />
+                    </div>
+                </div>
+            </form>
+        </section>
+        <script src="app.js"></script>
+
+    </body>
+</html>
